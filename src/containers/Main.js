@@ -18,6 +18,7 @@ import Profile from "./profile/Profile";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import Contact from "./contact/Contact";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -31,19 +32,20 @@ const Main = () => {
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         <Header />
-        <Greeting />
-        <Skills />
-        <StackProgress />
+        <Contact />
         <Education />
         <WorkExperience />
+        <Achievement />
+        {/* <Greeting />
+        <Skills />
+        <StackProgress />
         <Projects />
         <StartupProject />
-        <Achievement />
         <Blogs />
         <Talks />
         <Twitter />
         <Podcast />
-        <Profile />
+        <Profile /> */}
         <Footer />
         <Top />
       </StyleProvider>

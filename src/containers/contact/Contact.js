@@ -29,8 +29,16 @@ export default function Contact() {
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
+              <a
+                className="contact-detail-email"
+                href={"mailto:" + contactInfo.email_address}
+              >
+                {contactInfo.email_address}
+              </a>
+              <br />
+              <br />
               <a className="contact-detail" href={"tel:" + contactInfo.number}>
-                {contactInfo.number}
+                {contactInfo.phone_number}
               </a>
               <br />
               <br />
@@ -38,7 +46,7 @@ export default function Contact() {
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address}
+                {contactInfo.residency}
               </a>
               <br />
               <br />
@@ -60,3 +68,13 @@ export default function Contact() {
     </Fade>
   );
 }
+/*
+
+title: emoji("Contact Me ☎️"),
+subtitle:
+  "Discuss a project or just want to say hi? My Inbox is open for all.",
+phone_number: "+82-010-3158-3977",
+residency : "Seoul, Korea",
+email_address: "saadpasta70@gmail.com"
+};
+*/ 
