@@ -133,13 +133,16 @@ const techStack = {
 };
 
 
-const educationInfo = {
+const professionalExperienceInfo = {
 	display: true,
-	title: "프로젝트 경험",
+	title: "Project Experience",
+	subTitle: "프로젝트 경험",
 	schools: [
 		{
 			schoolName: "나이파이 활용 데이터 생명주기 관리 데이터플로우 프로토타입",
-			logo: require("./assets/images/checked-checkbox.png"),
+			logo: require("./assets/images/checkbox-black.png"),
+			checkbox_black : require("./assets/images/checkbox-black.png"),
+			checkbox_white : require("./assets/images/checkbox-white.png"),
 			subHeader: "#Python #ApacheNifi #Libvips",
 			duration: "2021/06 - 2021/07",
 			descBullets: [
@@ -149,7 +152,9 @@ const educationInfo = {
 		},
 		{
 			schoolName: "환자 모니터링 어플리케이션 고도화",
-			logo: require("./assets/images/checked-checkbox.png"),
+			logo: require("./assets/images/checkbox-black.png"),
+			checkbox_black : require("./assets/images/checkbox-black.png"),
+			checkbox_white : require("./assets/images/checkbox-white.png"),
 			subHeader: "#Java #Netty #SpringBoot #SpringMessage #Thymeleaf #PostgreSQL #WebSocket",
 			duration: "2021/03 - 2021/05",
 			descBullets: [
@@ -163,7 +168,9 @@ const educationInfo = {
 		},
 		{
 			schoolName: "다중 Jupyter 사용자 서버 고도화",
-			logo: require("./assets/images/checked-checkbox.png"),
+			logo: require("./assets/images/checkbox-black.png"),
+			checkbox_black : require("./assets/images/checkbox-black.png"),
+			checkbox_white : require("./assets/images/checkbox-white.png"),
 			subHeader: "#Python #Tornado #Java #Typescript #Docker #Jenkins #Linux",
 			duration: "2020/12 - 2021/02",
 			descBullets: [
@@ -176,13 +183,42 @@ const educationInfo = {
 		},
 		{
 			schoolName: "병원데이터 사용 관리 서비스 개발",
-			logo: require("./assets/images/checked-checkbox.png"),
+			logo: require("./assets/images/checkbox-black.png"),
+			checkbox_black : require("./assets/images/checkbox-black.png"),
+			checkbox_white : require("./assets/images/checkbox-white.png"),
 			subHeader: "#Java #SpringBoot #Angular #Lombok #MyBatis #MSSQL",
 			duration: "2020/10 - 2020/12",
 			descBullets: [
 				"연구신청 프로세스 도메인 설계",
 				"스프링부트 백엔드 API 설계 및 개발 (유저-CRUD, 사용신청서-CRUD, 어드민-CRUD)",
 				"Angular 프론트엔드 (HTML, CSS 퍼블리싱 미포함)"
+			]
+		}
+	]
+}
+
+const educationInfo = {
+	display: true,
+	title: "Educational Background",
+	subTitle: "교육",
+	schools: [
+		{
+			schoolName: "De La Salle Medical and Health Sciences Institute",
+			logo: require("./assets/images/dlshsiLogo.png"),
+			subHeader: "의과대학교 재활전공",
+			duration: "2010/06 - 2013/0",
+			descBullets: [
+				"Physics, Mathematics, Psychology, Anatomy, Biology, Anatomy, Health Care Management, etc...",
+				"물리학, 수학, 심리학, 해부학, 생물학, 해부학, 헬스 케어 매니지먼트, etc...."
+			]
+		},{
+			schoolName: "De La Salle Santiago Zobel School",
+			logo: require("./assets/images/dlszLogo.png"),
+			subHeader: "고등학교",
+			duration: "2007/04 - 2010/04",
+			descBullets: [
+				"학력 우수 장학금 : 2008/04 - 2010/04",
+				"오케스트라 색소폰 파트 리더"
 			]
 		}
 	]
@@ -306,50 +342,43 @@ const twitterDetails = {
 	display: true // Set true to display this section, defaults to false
 };
 
-
-
-
-
-
 const achievementSection = {
-	title: emoji("자격증 & 수료증 🏆 "),
+	title: emoji("Achievements and Certifications 🏆 "),
 	subtitle:
-		"Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+		"자격증 & 수료증",
 
 	achievementsCards: [
 		{
 			title: "AWS Certified Developer – Associate",
-			subtitle: "AWS 공인 자격증",
+			subtitle: "AWS 공인 개발자-어소시에이트 자격증",
 			image: require("./assets/images/aws-developer-associate.png"),
 			footerLink: [
 				{
-					name: "수료증",
-					url: "https://aws.amazon.com/certification/certified-developer-associate/"
+					name: "자격증 보기",
+					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
 				},
+				{name : "인증하기 w/ Credly.com", url:"https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url"},
 				{
-					name: "설명",
+					name: "Description 보기",
 					url: "https://aws.amazon.com/certification/certified-developer-associate/"
 				}
 			]
 		},
 		{
-			title: "IBM, Coursera",
-			subtitle: "Data Visualization with Python",
+			title: "IBM",
+			subtitle: "IBM 주관 Coursera 교육 과정 : Data Visualization with Python ( Python Programming / Data Virtualization / Data Visualization / Matplotlib )",
+			
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
 				{
-					name: "수료증",
+					name: "수료증 보기",
 					url: "https://drive.google.com/file/d/1FxHOFeugkBR_Z8sZHZ7iQXVJghd634sJ/view?usp=sharing"
 				},
-				{ name: "설명", url: "https://www.coursera.org/learn/python-for-data-visualization" },
-				, { name: "Python Programming" }
-				, { name: "Data Virtualization" }
-				, { name: "Data Visualization (DataViz)" }
-				, { name: "Matplotlib" }
+				{ name: "Description 보기", url: "https://www.coursera.org/learn/python-for-data-visualization" }
 			]
 		},
 		{
-			title: "IBM, Coursera",
+			title: "IBM",
 			subtitle: "What is Data Science?",
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
@@ -357,7 +386,7 @@ const achievementSection = {
 					name: "수료증",
 					url: "https://drive.google.com/file/d/11WkM5TNLktrk4cj3fqOuUyBub_p0yPbt/view?usp=sharing"
 				}, {
-					name: "설명"
+					name: "Description 보기"
 					, url: "https://www.coursera.org/learn/what-is-datascience"
 				},
 			]
@@ -368,22 +397,36 @@ const achievementSection = {
 
 const workExperiences = {
 	display: true, //Set it to true to show workExperiences Section
+	title : "Work and Training Experiences",
+	subTitle:"경력사항 및 훈련과정",
 	experience: [
 		{
-			company: "엔코어 아카데미",
-			companylogo: require("./assets/images/facebookLogo.png"),
+			company: "플랜잇 헬스케어",
+			companylogo: require("./assets/images/planit-healthcare-Logo.jpeg"),
+			role: "백엔드 개발자",
+			date: "10/2020 - Present",
+			desc: "\"Making Healthcare Data Work\"",
+			descBullets: [
+				"백엔드 : Java, Spring, JPA, MyBatis, SpringSecurity, Gradle, Maven",
+				"프론트엔드 : Angular, Thymeleaf",
+				"CI/CD : Jenkins, Github",
+				"Others : Jhipster"
+			]
+		}, {
 			role: "빅데이터 플랫폼 엔지니어",
+			companylogo: require("./assets/images/playdata-encore.png"),
+			company: "엔코어 아카데미",
 			date: "04/2020 - 09/2020",
 			desc: "6개월 교육과정 수료. (웹개발 + 데이터 사이언스)",
 			descBullets: [
-				"백엔드 : Java / SpringBoot / SpringMVC . OOP / 디자인패턴 ",
-				"프론트엔드 : HTML / CSS / Javascript / Vue.js / JSP / Thymeleaf",
-				"데이터 사이언스 : Python / Tensorflow / PyTorch"
+				"백엔드 : Java, SpringBoot, SpringMVC, OOP, 디자인패턴 ",
+				"프론트엔드 : HTML, CSS, Javascript, Vue.js, JSP, Thymeleaf",
+				"데이터 사이언스 : Python, Tensorflow, PyTorch"
 			]
 		}, {
-			company: "인프런",
-			companylogo: require("./assets/images/facebookLogo.png"),
 			role: "애자일 개발 방법론 개념과 활용",
+			companylogo: require("./assets/images/inflearnLogo.jpeg"),
+			company: "인프런",
 			date: "06/2020",
 			desc: "인프런 주관 오프라인 워크샵",
 			descBullets: [
@@ -403,6 +446,7 @@ export {
 	socialMediaLinks,
 	skillsSection,
 	educationInfo,
+	professionalExperienceInfo,
 	techStack,
 	workExperiences,
 	openSource,

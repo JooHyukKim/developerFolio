@@ -12,6 +12,7 @@ import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
+import ProfessionalExp from "./professionalExp/ProfessionalExp"
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
@@ -32,10 +33,11 @@ const Main = () => {
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         <Header />
-        <Contact />
-        <Education />
-        <WorkExperience />
+        <Contact/>
         <Achievement />
+        <WorkExperience />
+        <ProfessionalExp />
+        <Education />        
         {/* <Greeting />
         <Skills />
         <StackProgress />

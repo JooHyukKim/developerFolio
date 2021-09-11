@@ -1,9 +1,9 @@
 import React, {createRef, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
-import "./EducationCard.scss";
+import "./ProfessionalExpCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function EducationCard({school}) {
+export default function ProfessionalExpCard({school}) {
   const imgRef = createRef();
 
   const GetDescBullets = ({descBullets}) => {
@@ -26,7 +26,7 @@ export default function EducationCard({school}) {
               crossOrigin={"anonymous"}
               className="education-roundedimg"
               ref={imgRef}
-              src={school.logo}
+              src={isDark ? school.checkbox_white : school.checkbox_black}
               alt={school.schoolName}
             />
           </div>
