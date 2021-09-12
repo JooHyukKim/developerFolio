@@ -30,12 +30,7 @@ export default function Blogs() {
                 <BlogCard
                   key={i}
                   isDark={isDark}
-                  blog={{
-                    url: blog.url,
-                    image: blog.image,
-                    title: blog.title,
-                    description: blog.description
-                  }}
+                  blog={blog}
                 />
               );
             })}

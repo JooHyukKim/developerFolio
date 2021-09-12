@@ -24,9 +24,15 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-	github: "https://github.com/saadpasta",
-	// linkedin: "https://www.linkedin.com/in/saadpasta/",
+	github: "https://github.com/JooHyukKim",
+	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim-148351218",
 	gmail: "beanskobe@gmail.com",
+	tistory: {
+		href: "https://vince-kim.tistory.com/",
+		image: {
+			src: require("./assets/images/tistoryLogo.png")
+		}
+	},
 	// gitlab: "https://gitlab.com/saadpasta",
 	// facebook: "https://www.facebook.com/saad.pasta7",
 	// medium: "https://medium.com/@saadpasta",
@@ -221,7 +227,7 @@ const educationInfo = {
 				"Physics, Mathematics, Psychology, Anatomy, Biology, Anatomy, Health Care Management, etc...",
 				"물리학, 수학, 심리학, 해부학, 생물학, 해부학, 헬스 케어 매니지먼트, etc...."
 			]
-		},{
+		}, {
 			schoolName: "De La Salle Santiago Zobel School",
 			logo: require("./assets/images/dlszLogo.png"),
 			subHeader: "고등학교",
@@ -283,22 +289,35 @@ const bigProjects = {
 // Blogs Section
 
 const blogSection = {
-	title: "Blogs",
+	title: "Personal Project Experience",
 	subtitle:
-		"With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
+		"개인적으로도 주기적인 프로젝트 및 개발 경험을 쌓아가고 있습니다.",
 	blogs: [
 		{
-			url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-			title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+			url: "https://github.com/JooHyukKim/EZbasket02",
+			title: "LazyCart 2.0",
+			description: "Chrome Web Store 배포 버전",
+			descBullets: [
+				"LazyCart 1.0 버전의 오버헤드 아키텍쳐를 보완하여 크롬웹브라우저에 최적화한 버전."
+			]
+		}, {
+			url: "https://github.com/JooHyukKim/EasyBucket_v.1-HardForked",
+			title: "LazyCart 1.0",
 			description:
-				"Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-		},
-		{
-			url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-			title: "Why REACT is The Best?",
+				"E-commerce 쇼핑몰의 통합 장바구니 서비스.",
+			descBullets: [
+				"LazyCart는 쇼핑몰 페이지 도메인과 무관하게 상품을 담을 수 있어 유저가 보다 편리하게 온라인 쇼핑할 수 있습니다.",
+				"기술 스택 : Java 8, Apache Tomcat, MySQL, Jsoup, JSTL, Jquery, Bootstrap, Util.js, Jsoup"
+			]
+		}, {
+			url: "https://github.com/hello-blockchain/hanip-coin/tree/main/vince/hanip-coin-python",
+			title: "블록체인 토이 프로젝트",
 			description:
-				"React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+				"블록체인 기술의 암호화,보안,통신 원리,탈중앙화 원리를 체험",
+			descBullets: [
+				"Udemy의 <Blockchain A-Z™”> 온라인 코스를 이수 후 진행",
+				"깃허브에서 실행 방법 참고."
+			]
 		}
 	],
 	display: true // Set false to hide this section, defaults to true
@@ -367,7 +386,7 @@ const achievementSection = {
 					name: "자격증 보기",
 					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
 				},
-				{name : "인증하기 w/ Credly.com", url:"https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url"},
+				{ name: "인증하기 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
 				{
 					name: "Description 보기",
 					url: "https://aws.amazon.com/certification/certified-developer-associate/"
@@ -375,9 +394,9 @@ const achievementSection = {
 			]
 		},
 		{
-			title: "IBM",
-			subtitle: "IBM 주관 Coursera 교육 과정 : Data Visualization with Python ( Python Programming / Data Virtualization / Data Visualization / Matplotlib )",
-			
+			title: "IBM & Coursera Training : Data Visualization with Python",
+			subtitle: "습득 기술 : Python Programming / Data Virtualization / Data Visualization / Matplotlib",
+
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
 				{
@@ -388,8 +407,8 @@ const achievementSection = {
 			]
 		},
 		{
-			title: "IBM",
-			subtitle: "What is Data Science?",
+			title: "IBM & Coursera Training : What is Data Science?",
+			subtitle: "습득 지식 : 데이터 사이언스에 대한 정보",
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
 				{
@@ -407,11 +426,11 @@ const achievementSection = {
 
 const workExperiences = {
 	display: true, //Set it to true to show workExperiences Section
-	title : "Career",
-	subTitle:"경력사항",
+	title: "Career",
+	subTitle: "경력사항",
 	experience: [
 		{
-			company: "플랜잇 헬스케어",
+			company: "Work @플랜잇 헬스케어",
 			companylogo: require("./assets/images/planit-healthcare-Logo.png"),
 			role: "백엔드 개발자",
 			date: "10/2020 - Present",
@@ -423,9 +442,9 @@ const workExperiences = {
 				"Others : Jhipster"
 			]
 		}, {
+			company: "Train @엔코어 아카데미",
 			role: "빅데이터 플랫폼 엔지니어",
 			companylogo: require("./assets/images/playdata-encore.png"),
-			company: "엔코어 아카데미",
 			date: "04/2020 - 09/2020",
 			desc: "6개월 교육과정 수료. (웹개발 + 데이터 사이언스)",
 			descBullets: [
@@ -434,11 +453,11 @@ const workExperiences = {
 				"데이터 사이언스 : Python, Tensorflow, PyTorch"
 			]
 		}, {
+			company: "Train @인프런",
 			role: "애자일 개발 방법론 개념과 활용",
 			companylogo: require("./assets/images/inflearnLogo.jpeg"),
-			company: "인프런",
 			date: "06/2020",
-			desc: "인프런 주관 오프라인 워크샵",
+			desc: "인프런 워크샵",
 			descBullets: [
 				"애자일 방법론 개념",
 				"애자일 개발 방법 활용",

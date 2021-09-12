@@ -1,7 +1,18 @@
 import React from "react";
 import "./BlogCard.scss";
 
-export default function BlogCard({blog, isDark}) {
+export default function BlogCard({ blog, isDark }) {
+
+  const GetDescBullets = ({ descBullets }) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+        <li key={i} className="subTitle">
+          {item}
+        </li>
+      ))
+      : null;
+  };
+
   function openUrlInNewTab(url) {
     if (url !== undefined) {
       var win = window.open(url, "_blank");
@@ -25,8 +36,12 @@ export default function BlogCard({blog, isDark}) {
             {blog.description}
           </p>
           <div className="go-corner">
+
             <div className="go-arrow">→</div>
           </div>
+          <ul className="desc-bullets-parent">
+          <GetDescBullets descBullets={blog.descBullets} />
+          </ul>
         </a>
       </div>
     </div>

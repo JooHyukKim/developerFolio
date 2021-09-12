@@ -36,16 +36,15 @@ const Main = () => {
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <Header />
         <Contact />
-        <Achievement />
-        <WorkExperience />
-        <ProfessionalExp content={professionalProjectInfo} />
-        <ProfessionalExp content={personalProjectInfo} />
-        <ProfessionalExp content={educationInfo} />
+        <Achievement /> {/* 자격증, 수료증*/} 
+        <WorkExperience />{/*  */}
+        <ProfessionalExp content={professionalProjectInfo} /> {/* 기업 프로젝트 경험 */}
+        <Blogs /> {/* 개인프로젝트 경험*/}
+        <ProfessionalExp content={educationInfo} /> {/* 교육*/}
         <Projects />
         {/* <Greeting />
         <Skills />
         <StackProgress />
-        <Blogs />
         <Talks />
         <Twitter />
         <Podcast />

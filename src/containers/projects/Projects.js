@@ -56,7 +56,7 @@ export default function Projects() {
             })}
           </div>
           <Button
-            text={"More Projects"}
+            text={"프로젝트 더보기"}
             className="project-button"
             href={socialMediaLinks.github}
             newTab={true}

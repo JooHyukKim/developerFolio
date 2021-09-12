@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -16,6 +16,19 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-github"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+
+      {socialMediaLinks.tistory ? (
+        <a
+          href={socialMediaLinks.tistory.href}
+          className="icon-button tistory"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={socialMediaLinks.tistory.image.src} alt="tistory" className=""></img>
           <span></span>
         </a>
       ) : null}
@@ -115,6 +128,7 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
     </div>
   );
 }

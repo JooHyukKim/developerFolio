@@ -10,7 +10,7 @@ export default function ProfessionalExp({content}) {
   if (content.display) {
     return (
       <div className="education-section" id="education">
-        <div className="achievement-header">
+        <div className="">
           <h1
             className={
               isDark
