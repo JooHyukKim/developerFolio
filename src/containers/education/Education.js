@@ -1,6 +1,5 @@
 import "./Education.scss";
 import EducationCard from "../../components/educationCard/EducationCard";
-import ProfessionalExpCard from "../../components/professionalExpCard/ProfessionalExpCard";
 import React, { useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
 import { educationInfo } from "../../portfolio"

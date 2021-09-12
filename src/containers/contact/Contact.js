@@ -68,13 +68,3 @@ export default function Contact() {
     </Fade>
   );
 }
-/*
-
-title: emoji("Contact Me ☎️"),
-subtitle:
-  "Discuss a project or just want to say hi? My Inbox is open for all.",
-phone_number: "+82-010-3158-3977",
-residency : "Seoul, Korea",
-email_address: "saadpasta70@gmail.com"
-};
-*/ 
