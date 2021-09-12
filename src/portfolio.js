@@ -71,7 +71,7 @@ const blogSection = {
 
 const socialMediaLinks = {
 	github: "https://github.com/JooHyukKim",
-	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim-148351218",
+	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim/",
 	gmail: "beanskobe@gmail.com",
 	tistory: {
 		href: "https://vince-kim.tistory.com/",
