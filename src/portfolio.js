@@ -1,13 +1,27 @@
 /* Change this file to get your personal Portfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-// Summary And Greeting Section
-
 import emoji from "react-easy-emoji";
+import {
+	socialMediaLinks,
+	podcastSection,
+	skillsSection,
+	talkSection,
+	techStack,
+	bigProjects
+} from "./portfolio-unused";
 
 const illustration = {
-	animated: true // set to false to use static SVG
+	animated: true
+};
+
+const twitterDetails = {
+	userName: "twitter",
+	display: false
+};
+
+const openSource = {
+	showGithubProfile: "true",
+	display: true
 };
 
 const greeting = {
@@ -18,125 +32,44 @@ const greeting = {
 	),
 	resumeLink:
 		"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-	displayGreeting: true // Set false to hide this section, defaults to true
+	displayGreeting: true
 };
 
-// Social Media Links
-
-const socialMediaLinks = {
-	github: "https://github.com/JooHyukKim",
-	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim-148351218",
-	gmail: "beanskobe@gmail.com",
-	tistory: {
-		href: "https://vince-kim.tistory.com/",
-		image: {
-			src: require("./assets/images/tistoryLogo.png")
-		}
-	},
-	// gitlab: "https://gitlab.com/saadpasta",
-	// facebook: "https://www.facebook.com/saad.pasta7",
-	// medium: "https://medium.com/@saadpasta",
-	// stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-	// Instagram and Twitter are also supported in the links!
-	display: true // Set true to display this section, defaults to false
-};
-
-// Skills Section
-
-const skillsSection = {
-	title: "What I do",
-	subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-	skills: [
-		emoji(
-			"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-		),
-		emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-		emoji(
-			"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-		)
-	],
-
-	/* Make Sure to include correct Font Awesome Classname to view your icon
-  https://fontawesome.com/icons?d=gallery */
-
-	softwareSkills: [
+const blogSection = {
+	title: "Personal Project Experience",
+	subtitle:
+		"개인적으로도 주기적인 프로젝트 및 개발 경험을 쌓아가고 있습니다.",
+	blogs: [
 		{
-			skillName: "html-5",
-			fontAwesomeClassname: "fab fa-html5"
-		},
-		{
-			skillName: "css3",
-			fontAwesomeClassname: "fab fa-css3-alt"
-		},
-		{
-			skillName: "sass",
-			fontAwesomeClassname: "fab fa-sass"
-		},
-		{
-			skillName: "JavaScript",
-			fontAwesomeClassname: "fab fa-js"
-		},
-		{
-			skillName: "reactjs",
-			fontAwesomeClassname: "fab fa-react"
-		},
-		{
-			skillName: "nodejs",
-			fontAwesomeClassname: "fab fa-node"
-		},
-		{
-			skillName: "swift",
-			fontAwesomeClassname: "fab fa-swift"
-		},
-		{
-			skillName: "npm",
-			fontAwesomeClassname: "fab fa-npm"
-		},
-		{
-			skillName: "sql-database",
-			fontAwesomeClassname: "fas fa-database"
-		},
-		{
-			skillName: "aws",
-			fontAwesomeClassname: "fab fa-aws"
-		},
-		{
-			skillName: "firebase",
-			fontAwesomeClassname: "fas fa-fire"
-		},
-		{
-			skillName: "python",
-			fontAwesomeClassname: "fab fa-python"
-		},
-		{
-			skillName: "docker",
-			fontAwesomeClassname: "fab fa-docker"
+			url: "https://github.com/JooHyukKim/EZbasket02",
+			title: "LazyCart 2.0",
+			description: "Chrome Web Store 배포 버전",
+			descBullets: [
+				"LazyCart 1.0 버전의 오버헤드 아키텍쳐를 보완하여 크롬웹브라우저에 최적화한 버전."
+			]
+		}, {
+			url: "https://github.com/JooHyukKim/EasyBucket_v.1-HardForked",
+			title: "LazyCart 1.0",
+			description:
+				"E-commerce 쇼핑몰의 통합 장바구니 서비스.",
+			descBullets: [
+				"LazyCart는 쇼핑몰 페이지 도메인과 무관하게 상품을 담을 수 있어 유저가 보다 편리하게 온라인 쇼핑할 수 있습니다.",
+				"기술 스택 : Java 8, Apache Tomcat, MySQL, Jsoup, JSTL, Jquery, Bootstrap, Util.js, Jsoup"
+			]
+		}, {
+			url: "https://github.com/hello-blockchain/hanip-coin/tree/main/vince/hanip-coin-python",
+			title: "블록체인 토이 프로젝트",
+			description:
+				"블록체인 기술의 암호화,보안,통신 원리,탈중앙화 원리를 체험",
+			descBullets: [
+				"Udemy의 <Blockchain A-Z™”> 온라인 코스를 이수 후 진행",
+				"깃허브에서 실행 방법 참고."
+			]
 		}
 	],
-	display: true // Set false to hide this section, defaults to true
+	display: true
 };
 
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-	viewSkillBars: true, //Set it to true to show Proficiency Section
-	experience: [
-		{
-			Stack: "Frontend/Design", //Insert stack or technology you have experience in
-			progressPercentage: "90%" //Insert relative proficiency in percentage
-		},
-		{
-			Stack: "Backend",
-			progressPercentage: "70%"
-		},
-		{
-			Stack: "Programming",
-			progressPercentage: "60%"
-		}
-	],
-	displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
 
 
 const professionalProjectInfo = {
@@ -240,120 +173,6 @@ const educationInfo = {
 	]
 }
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-	showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-	display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-	title: "Big Projects",
-	subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-	projects: [
-		{
-			image: require("./assets/images/saayaHealthLogo.webp"),
-			projectName: "Saayahealth",
-			projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-			footerLink: [
-				{
-					name: "Visit Website",
-					url: "http://saayahealth.com/"
-				}
-				//  you can add extra buttons here.
-			]
-		},
-		{
-			image: require("./assets/images/nextuLogo.webp"),
-			projectName: "Nextu",
-			projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-			footerLink: [
-				{
-					name: "Visit Website",
-					url: "http://nextu.se/"
-				}
-			]
-		}
-	],
-	display: true // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-
-
-// Blogs Section
-
-const blogSection = {
-	title: "Personal Project Experience",
-	subtitle:
-		"개인적으로도 주기적인 프로젝트 및 개발 경험을 쌓아가고 있습니다.",
-	blogs: [
-		{
-			url: "https://github.com/JooHyukKim/EZbasket02",
-			title: "LazyCart 2.0",
-			description: "Chrome Web Store 배포 버전",
-			descBullets: [
-				"LazyCart 1.0 버전의 오버헤드 아키텍쳐를 보완하여 크롬웹브라우저에 최적화한 버전."
-			]
-		}, {
-			url: "https://github.com/JooHyukKim/EasyBucket_v.1-HardForked",
-			title: "LazyCart 1.0",
-			description:
-				"E-commerce 쇼핑몰의 통합 장바구니 서비스.",
-			descBullets: [
-				"LazyCart는 쇼핑몰 페이지 도메인과 무관하게 상품을 담을 수 있어 유저가 보다 편리하게 온라인 쇼핑할 수 있습니다.",
-				"기술 스택 : Java 8, Apache Tomcat, MySQL, Jsoup, JSTL, Jquery, Bootstrap, Util.js, Jsoup"
-			]
-		}, {
-			url: "https://github.com/hello-blockchain/hanip-coin/tree/main/vince/hanip-coin-python",
-			title: "블록체인 토이 프로젝트",
-			description:
-				"블록체인 기술의 암호화,보안,통신 원리,탈중앙화 원리를 체험",
-			descBullets: [
-				"Udemy의 <Blockchain A-Z™”> 온라인 코스를 이수 후 진행",
-				"깃허브에서 실행 방법 참고."
-			]
-		}
-	],
-	display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-	title: "TALKS",
-	subtitle: emoji(
-		"I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-	),
-
-	talks: [
-		{
-			title: "Build Actions For Google Assistant",
-			subtitle: "Codelab at GDG DevFest Karachi 2019",
-			slides_url: "https://bit.ly/saadpasta-slides",
-			event_url: "https://www.facebook.com/events/2339906106275053/"
-		}
-	],
-	display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-	title: emoji("Podcast 🎙️"),
-	subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-	// Please Provide with Your Podcast embeded Link
-	podcast: [
-		"https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-	],
-	display: true // Set false to hide this section, defaults to true
-};
 
 const contactInfo = {
 	title: emoji("Kim, Joo Hyuk"),
@@ -364,18 +183,10 @@ const contactInfo = {
 	email_address: "beanskobe@gmail.com"
 };
 
-// Twitter Section
-
-const twitterDetails = {
-	userName: "twitter", //Replace "twitter" with your twitter username without @
-	display: true // Set true to display this section, defaults to false
-};
-
 const achievementSection = {
 	title: emoji("Achievements and Certifications 🏆 "),
 	subtitle:
 		"자격증 & 수료증",
-
 	achievementsCards: [
 		{
 			title: "AWS Certified Developer – Associate",
@@ -474,17 +285,17 @@ const workExperiences = {
 export {
 	illustration,
 	greeting,
-	socialMediaLinks,
-	skillsSection,
 	educationInfo, professionalProjectInfo, personalProjectInfo,
-	techStack,
 	workExperiences,
 	openSource,
-	bigProjects,
 	achievementSection,
 	blogSection,
-	talkSection,
-	podcastSection,
 	contactInfo,
-	twitterDetails
+	twitterDetails,
+	socialMediaLinks,
+	podcastSection,
+	skillsSection,
+	talkSection,
+	techStack,
+	bigProjects
 };

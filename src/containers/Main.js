@@ -38,17 +38,17 @@ const Main = () => {
         <Contact />
         <Achievement /> {/* 자격증, 수료증*/} 
         <WorkExperience />{/*  */}
-        <ProfessionalExp content={professionalProjectInfo} /> {/* 기업 프로젝트 경험 */}
+        <ProfessionalExp content={professionalProjectInfo} /> {/* 기업프로젝트 경험 */}
         <Blogs /> {/* 개인프로젝트 경험*/}
         <ProfessionalExp content={educationInfo} /> {/* 교육*/}
         <Projects />
-        {/* <Greeting />
+        <Greeting />
         <Skills />
         <StackProgress />
         <Talks />
         <Twitter />
         <Podcast />
-        <Profile /> */}
+        <Profile />
         <Footer />
         <Top />
       </StyleProvider>
