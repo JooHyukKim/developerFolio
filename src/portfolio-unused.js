@@ -1,19 +1,6 @@
 // Social Media Links
 import emoji from "react-easy-emoji";
 
-const socialMediaLinks = {
-	github: "https://github.com/JooHyukKim",
-	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim-148351218",
-	gmail: "beanskobe@gmail.com",
-	tistory: {
-		href: "https://vince-kim.tistory.com/",
-		image: {
-			src: require("./assets/images/tistoryLogo.png")
-		}
-	},
-	display: false // Set true to display this section, defaults to false
-};
-
 // Skills Section
 
 const skillsSection = {
@@ -102,7 +89,6 @@ const podcastSection = {
 
 
 export {
-    socialMediaLinks,
     podcastSection,
     skillsSection,
     talkSection,

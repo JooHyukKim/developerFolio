@@ -2,7 +2,6 @@
 
 import emoji from "react-easy-emoji";
 import {
-	socialMediaLinks,
 	podcastSection,
 	skillsSection,
 	talkSection,
@@ -69,6 +68,20 @@ const blogSection = {
 	],
 	display: true
 };
+
+const socialMediaLinks = {
+	github: "https://github.com/JooHyukKim",
+	linkedin: "https://www.linkedin.com/in/joo-hyuk-kim-148351218",
+	gmail: "beanskobe@gmail.com",
+	tistory: {
+		href: "https://vince-kim.tistory.com/",
+		image: {
+			src: require("./assets/images/tistoryLogo.png")
+		}
+	},
+	display: true // Set true to display this section, defaults to false
+};
+
 
 
 
@@ -292,10 +305,10 @@ export {
 	blogSection,
 	contactInfo,
 	twitterDetails,
-	socialMediaLinks,
 	podcastSection,
 	skillsSection,
 	talkSection,
 	techStack,
+	socialMediaLinks,
 	bigProjects
 };
