@@ -133,16 +133,14 @@ const techStack = {
 };
 
 
-const professionalExperienceInfo = {
+const professionalProjectInfo = {
 	display: true,
-	title: "Project Experience",
-	subTitle: "프로젝트 경험",
+	title: "Company Project Experience",
+	subTitle: "기업 프로젝트 경험",
 	schools: [
 		{
 			schoolName: "나이파이 활용 데이터 생명주기 관리 데이터플로우 프로토타입",
-			logo: require("./assets/images/checkbox-black.png"),
-			checkbox_black : require("./assets/images/checkbox-black.png"),
-			checkbox_white : require("./assets/images/checkbox-white.png"),
+			logo: require("./assets/images/planit-healthcare-Logo.png"),
 			subHeader: "#Python #ApacheNifi #Libvips",
 			duration: "2021/06 - 2021/07",
 			descBullets: [
@@ -152,9 +150,7 @@ const professionalExperienceInfo = {
 		},
 		{
 			schoolName: "환자 모니터링 어플리케이션 고도화",
-			logo: require("./assets/images/checkbox-black.png"),
-			checkbox_black : require("./assets/images/checkbox-black.png"),
-			checkbox_white : require("./assets/images/checkbox-white.png"),
+			logo: require("./assets/images/planit-healthcare-Logo.png"),
 			subHeader: "#Java #Netty #SpringBoot #SpringMessage #Thymeleaf #PostgreSQL #WebSocket",
 			duration: "2021/03 - 2021/05",
 			descBullets: [
@@ -168,9 +164,7 @@ const professionalExperienceInfo = {
 		},
 		{
 			schoolName: "다중 Jupyter 사용자 서버 고도화",
-			logo: require("./assets/images/checkbox-black.png"),
-			checkbox_black : require("./assets/images/checkbox-black.png"),
-			checkbox_white : require("./assets/images/checkbox-white.png"),
+			logo: require("./assets/images/planit-healthcare-Logo.png"),
 			subHeader: "#Python #Tornado #Java #Typescript #Docker #Jenkins #Linux",
 			duration: "2020/12 - 2021/02",
 			descBullets: [
@@ -183,15 +177,31 @@ const professionalExperienceInfo = {
 		},
 		{
 			schoolName: "병원데이터 사용 관리 서비스 개발",
-			logo: require("./assets/images/checkbox-black.png"),
-			checkbox_black : require("./assets/images/checkbox-black.png"),
-			checkbox_white : require("./assets/images/checkbox-white.png"),
+			logo: require("./assets/images/planit-healthcare-Logo.png"),
 			subHeader: "#Java #SpringBoot #Angular #Lombok #MyBatis #MSSQL",
 			duration: "2020/10 - 2020/12",
 			descBullets: [
 				"연구신청 프로세스 도메인 설계",
 				"스프링부트 백엔드 API 설계 및 개발 (유저-CRUD, 사용신청서-CRUD, 어드민-CRUD)",
 				"Angular 프론트엔드 (HTML, CSS 퍼블리싱 미포함)"
+			]
+		}
+	]
+}
+
+const personalProjectInfo = {
+	display: true,
+	title: "Personal Project Experience",
+	subTitle: "개인 프로젝트 경험",
+	schools: [
+		{
+			schoolName: "나이파이 활용 데이터 생명주기 관리 데이터플로우 프로토타입",
+			logo: require("./assets/images/self-project.png"),
+			subHeader: "#Python #ApacheNifi #Libvips",
+			duration: "2021/06 - 2021/07",
+			descBullets: [
+				"Storage 관리 및 FIle Validation 체크하는 아파치 나이파이 프로세스 프로토타입 개발",
+				"비정형 병원 데이터를 정규화하는 아파치 나이파이 프로세스 디자인"
 			]
 		}
 	]
@@ -397,12 +407,12 @@ const achievementSection = {
 
 const workExperiences = {
 	display: true, //Set it to true to show workExperiences Section
-	title : "Work and Training Experiences",
-	subTitle:"경력사항 및 훈련과정",
+	title : "Career",
+	subTitle:"경력사항",
 	experience: [
 		{
 			company: "플랜잇 헬스케어",
-			companylogo: require("./assets/images/planit-healthcare-Logo.jpeg"),
+			companylogo: require("./assets/images/planit-healthcare-Logo.png"),
 			role: "백엔드 개발자",
 			date: "10/2020 - Present",
 			desc: "\"Making Healthcare Data Work\"",
@@ -445,8 +455,7 @@ export {
 	greeting,
 	socialMediaLinks,
 	skillsSection,
-	educationInfo,
-	professionalExperienceInfo,
+	educationInfo, professionalProjectInfo, personalProjectInfo,
 	techStack,
 	workExperiences,
 	openSource,

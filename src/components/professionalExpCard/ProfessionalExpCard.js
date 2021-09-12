@@ -26,7 +26,7 @@ export default function ProfessionalExpCard({school}) {
               crossOrigin={"anonymous"}
               className="education-roundedimg"
               ref={imgRef}
-              src={isDark ? school.checkbox_white : school.checkbox_black}
+              src={school.logo}
               alt={school.schoolName}
             />
           </div>

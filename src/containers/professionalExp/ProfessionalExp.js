@@ -2,13 +2,12 @@ import "./ProfessionalExp.scss";
 import ProfessionalExpCard from "../../components/professionalExpCard/ProfessionalExpCard";
 import React, { useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
-import { professionalExperienceInfo } from "../../portfolio"
 
-export default function ProfessionalExp() {
+export default function ProfessionalExp({content}) {
 
   const { isDark } = useContext(StyleContext);
 
-  if (professionalExperienceInfo.display) {
+  if (content.display) {
     return (
       <div className="education-section" id="education">
         <div className="achievement-header">
@@ -19,7 +18,7 @@ export default function ProfessionalExp() {
                 : "heading achievement-heading"
             }
           >
-            {professionalExperienceInfo.title}
+            {content.title}
           </h1>
           <p
             className={
@@ -28,13 +27,13 @@ export default function ProfessionalExp() {
                 : "subTitle achievement-subtitle"
             }
           >
-            {professionalExperienceInfo.subTitle}
+            {content.subTitle}
           </p>
 
         </div>
         <br />
         <div className="education-card-container">
-          {professionalExperienceInfo.schools.map((school, index) => (
+          {content.schools.map((school, index) => (
             <ProfessionalExpCard key={index} school={school} />
           ))}
         </div>

@@ -16,10 +16,12 @@ import ProfessionalExp from "./professionalExp/ProfessionalExp"
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
-import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
+import { StyleProvider } from "../contexts/StyleContext";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import "./Main.scss";
 import Contact from "./contact/Contact";
+import { educationInfo, professionalProjectInfo, personalProjectInfo } from "../portfolio"
+
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -31,18 +33,18 @@ const Main = () => {
 
   return (
     <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <Header />
-        <Contact/>
+        <Contact />
         <Achievement />
         <WorkExperience />
-        <ProfessionalExp />
-        <Education />        
+        <ProfessionalExp content={professionalProjectInfo} />
+        <ProfessionalExp content={personalProjectInfo} />
+        <ProfessionalExp content={educationInfo} />
+        <Projects />
         {/* <Greeting />
         <Skills />
         <StackProgress />
-        <Projects />
-        <StartupProject />
         <Blogs />
         <Talks />
         <Twitter />
