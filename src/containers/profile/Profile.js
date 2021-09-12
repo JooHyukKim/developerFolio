@@ -7,7 +7,7 @@ const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
-export default function Profile() {
+export default function Profile({view}) {
   const [prof, setrepo] = useState([]);
   function setProfileFunction(array) {
     setrepo(array);
@@ -38,7 +38,10 @@ export default function Profile() {
       getProfileData();
     }
   }, []);
-  if (
+  if(!view){
+    return <div></div>;
+  }
+  else if (
     openSource.display &&
     openSource.showGithubProfile === "true" &&
     !(typeof prof === "string" || prof instanceof String)

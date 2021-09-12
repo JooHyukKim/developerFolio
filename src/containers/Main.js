@@ -46,7 +46,7 @@ const Main = () => {
         <Talks />
         <Twitter />
         <Podcast />
-        <Profile />
+        <Profile value={{view : false}}/>
         <Footer />
         <Top />
       </StyleProvider>

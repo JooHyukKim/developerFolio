@@ -32,7 +32,7 @@ const greeting = {
 	),
 	resumeLink:
 		"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-	displayGreeting: true
+	displayGreeting: false
 };
 
 const blogSection = {
