@@ -432,14 +432,16 @@ const workExperiences = {
 		{
 			company: "Work @플랜잇 헬스케어",
 			companylogo: require("./assets/images/planit-healthcare-Logo.png"),
-			role: "백엔드 개발자",
+			role: "백엔드 엔지니어",
 			date: "10/2020 - Present",
 			desc: "\"Making Healthcare Data Work\"",
 			descBullets: [
-				"백엔드 : Java, Spring, JPA, MyBatis, SpringSecurity, Gradle, Maven",
-				"프론트엔드 : Angular, Thymeleaf",
-				"CI/CD : Jenkins, Github",
-				"Others : Jhipster"
+				"담당업무. 1 : Clinical Research 연구검색엔진 시스템 개발 및 고도화 작업",
+				"담당업무. 2 : BI/CI 지표 및 통합경영대시보드 소프트웨어 운영 개발",
+				"담당업무. 3 : 국책과제 관련 소프트웨어 개발",
+				"개발환경 (Language) : Java, Javascript, Typescript",
+				"개발환경 (Framework)  : SpringBoot, Angular, React, SpringJPA, QueryDSL, Mybatis, Git, Jenkins, Maven, Gradle",
+				"개발환경 (SQL) SQL : MSSQL, PostgreSQL, MySQL",
 			]
 		}, {
 			company: "Train @엔코어 아카데미",
