@@ -85,7 +85,6 @@ const socialMediaLinks = {
 
 
 
-
 const professionalProjectInfo = {
 	display: true,
 	title: "Company Project Experience",
@@ -208,13 +207,13 @@ const achievementSection = {
 			image: require("./assets/images/aws-saa.png"),
 			footerLink: [
 				{
-					name: "자격증 보기",
+					name: "자격증",
 					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
 				},
-				{ name: "인증하기 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
+				{ name: "인증 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
 				{
-					name: "Description 보기",
-					url: "https://aws.amazon.com/certification/certified-developer-associate/"
+					name: "설명",
+					url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
 				}
 			]
 		},
@@ -224,12 +223,12 @@ const achievementSection = {
 			image: require("./assets/images/aws-developer-associate.png"),
 			footerLink: [
 				{
-					name: "자격증 보기",
+					name: "자격증",
 					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
 				},
-				{ name: "인증하기 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
+				{ name: "인증 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
 				{
-					name: "Description 보기",
+					name: "설명",
 					url: "https://aws.amazon.com/certification/certified-developer-associate/"
 				}
 			]
@@ -241,10 +240,10 @@ const achievementSection = {
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
 				{
-					name: "수료증 보기",
+					name: "수료증",
 					url: "https://drive.google.com/file/d/1FxHOFeugkBR_Z8sZHZ7iQXVJghd634sJ/view?usp=sharing"
 				},
-				{ name: "Description 보기", url: "https://www.coursera.org/learn/python-for-data-visualization" }
+				{ name: "설명", url: "https://www.coursera.org/learn/python-for-data-visualization" }
 			]
 		},
 		{
@@ -256,7 +255,7 @@ const achievementSection = {
 					name: "수료증",
 					url: "https://drive.google.com/file/d/11WkM5TNLktrk4cj3fqOuUyBub_p0yPbt/view?usp=sharing"
 				}, {
-					name: "Description 보기"
+					name: "설명"
 					, url: "https://www.coursera.org/learn/what-is-datascience"
 				},
 			]
