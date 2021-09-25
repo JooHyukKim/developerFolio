@@ -79,6 +79,7 @@ const socialMediaLinks = {
 			src: require("./assets/images/tistoryLogo.png")
 		}
 	},
+	medium:"https://medium.com/@beanskobe",
 	display: true // Set true to display this section, defaults to false
 };
 
@@ -202,8 +203,24 @@ const achievementSection = {
 		"자격증 & 수료증",
 	achievementsCards: [
 		{
+			title: "AWS Certified Solutions Architect - Associate",
+			subtitle: "AWS 솔루션 아키텍트 - 어소시에이트 자격증",
+			image: require("./assets/images/aws-saa.png"),
+			footerLink: [
+				{
+					name: "자격증 보기",
+					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
+				},
+				{ name: "인증하기 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
+				{
+					name: "Description 보기",
+					url: "https://aws.amazon.com/certification/certified-developer-associate/"
+				}
+			]
+		},
+		{
 			title: "AWS Certified Developer – Associate",
-			subtitle: "AWS 공인 개발자-어소시에이트 자격증",
+			subtitle: "AWS 공인 개발자 - 어소시에이트 자격증",
 			image: require("./assets/images/aws-developer-associate.png"),
 			footerLink: [
 				{
@@ -281,7 +298,7 @@ const workExperiences = {
 		}, {
 			company: "Train @인프런",
 			role: "애자일 개발 방법론 개념과 활용",
-			companylogo: require("./assets/images/inflearnLogo.jpeg"),
+			companylogo: require("./assets/images/inflearnLogo.png"),
 			date: "06/2020",
 			desc: "인프런 워크샵",
 			descBullets: [
