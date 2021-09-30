@@ -16,6 +16,7 @@ import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import { StyleProvider } from "../contexts/StyleContext";
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import ExtraWorkExperience from "./extraWorkExperience/ExtraWorkExperience";
 import "./Main.scss";
 import Contact from "./contact/Contact";
 import { educationInfo, professionalProjectInfo } from "../portfolio"
@@ -47,7 +48,10 @@ const Main = () => {
         <Twitter />
         <Podcast />
         <Profile value={{view : false}}/>
+        
+        <ExtraWorkExperience />
         <Footer />
+
         <Top />
       </StyleProvider>
     </div>

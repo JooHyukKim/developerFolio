@@ -208,9 +208,9 @@ const achievementSection = {
 			footerLink: [
 				{
 					name: "자격증",
-					url: "https://drive.google.com/file/d/1ahWvcQd6XO48ucUwXoEvf2BKMlKfruxr/view?usp=sharing"
+					url: "https://drive.google.com/file/d/1OEOCNGgmF7UudvJaJ2zq7Yoxj-i0eC1L/view?usp=sharing"
 				},
-				{ name: "인증 w/ Credly.com", url: "https://www.credly.com/badges/fced76ab-5c42-41c5-8853-6af613c649af/public_url" },
+				{ name: "인증 w/ Credly.com", url: "https://www.credly.com/earner/earned/badge/16dde73b-636f-425d-a129-095e4db96ca6" },
 				{
 					name: "설명",
 					url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
@@ -310,10 +310,41 @@ const workExperiences = {
 	]
 };
 
+const extraWorkExperience = {
+	display: true, //Set it to true to show workExperiences Section
+	title: "Extra Work Experience",
+	subTitle: "기경력사항",
+	experience: [
+		{
+			title: "Woodworks Joinery (우드웍스 조이너리)",
+			image: require("./assets/images/woodworx.png"),
+			role: "Senior Cabinet Maker",
+			date: "06/2018 - 04/2019",
+			desc: "시드니, 호주",
+			descBullets: [
+				"제품 품질 관리",
+				"프로젝트 디자인 및 설계 관리",
+				"가구 제작"
+			]
+		}, {
+			title: "한샘부엌가구",
+			role: "인테리어 시공팀장",
+			image: require("./assets/images/hanssem.png"),
+			date: "01/2016 - 05/2018",
+			desc: "제주도, 한국",
+			descBullets: [
+				"일반가정 및 아파트 부엌 & 가구 시공",
+				"A/S 관리",
+				"프로젝트 관리"
+			]
+		}
+	]
+};
+
 
 export {
 	illustration,
-	greeting,
+	greeting,extraWorkExperience,
 	educationInfo, professionalProjectInfo, personalProjectInfo,
 	workExperiences,
 	openSource,
