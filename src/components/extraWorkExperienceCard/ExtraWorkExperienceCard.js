@@ -2,15 +2,6 @@ import React from "react";
 import "./ExtraWorkExperienceCard.scss";
 
 export default function ExtraWorkExperienceCard({ cardInfo, isDark }) {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-
-    var win = window.open(url, "_blank");
-    win.focus();
-
-  }
   const GetDescBullets = ({ descBullets, isDark }) => {
     console.log('this is desc boullets');
     console.log(descBullets);
