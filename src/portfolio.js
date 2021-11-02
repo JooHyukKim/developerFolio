@@ -94,7 +94,7 @@ const professionalProjectInfo = {
 			schoolName: "나이파이 활용 데이터 생명주기 관리 데이터플로우 프로토타입",
 			logo: require("./assets/images/planit-healthcare-Logo.png"),
 			subHeader: "#Python #ApacheNifi #Libvips",
-			duration: "2021/06 - 2021/07",
+			duration: "2021/06 - 2021/10",
 			descBullets: [
 				"Storage 관리 및 FIle Validation 체크하는 아파치 나이파이 프로세스 프로토타입 개발",
 				"비정형 병원 데이터를 정규화하는 아파치 나이파이 프로세스 디자인"
@@ -273,7 +273,7 @@ const workExperiences = {
 			company: "Work @플랜잇 헬스케어",
 			companylogo: require("./assets/images/planit-healthcare-Logo.png"),
 			role: "백엔드 엔지니어",
-			date: "10/2020 - Present",
+			date: "10/2020 - 11/2021",
 			desc: "\"Making Healthcare Data Work\"",
 			descBullets: [
 				"담당업무. 1 : Clinical Research 연구검색엔진 시스템 개발 및 고도화 작업",
@@ -313,7 +313,7 @@ const workExperiences = {
 const extraWorkExperience = {
 	display: true, //Set it to true to show workExperiences Section
 	title: "Extra Work Experience",
-	subTitle: "기경력사항",
+	subTitle: "기타경력사항",
 	experience: [
 		{
 			title: "Woodworks Joinery (우드웍스 조이너리)",
