@@ -148,7 +148,7 @@ const personalProjectInfo = {
 	schools: [
 		{
 			schoolName: "나이파이 활용 데이터 생명주기 관리 데이터플로우 프로토타입",
-			logo: require("./assets/images/self-project.png"),
+			// logo: require("./assets/images/self-project.png"),
 			subHeader: "#Python #ApacheNifi #Libvips",
 			duration: "2021/06 - 2021/07",
 			descBullets: [
@@ -201,6 +201,20 @@ const achievementSection = {
 	subtitle:
 		"자격증 & 수료증",
 	achievementsCards: [
+{
+			title: "Java & SpringBoot로 시작하는 웹 프로그래밍",
+			subtitle: "KDS X FastCampus 2개월 온라인 교육과정 부트캠프",
+			image: require("./assets/images/fastcampus.png"),
+			footerLink: [
+				{
+					name: "수료증",
+					url: "https://drive.google.com/file/d/1J8jCv1dfnoK5l512aPBu1R8lULcrWwuX/view?usp=sharing"
+				},{
+					name: "커리큘럼",
+					url: "https://drive.google.com/file/d/1rv9tneUnK7jKphhnWqzcdpo-tYHSZSrA/view?usp=sharing"
+				}
+			]
+		},
 		{
 			title: "AWS Certified Solutions Architect - Associate",
 			subtitle: "AWS 솔루션 아키텍트 - 어소시에이트 자격증",
