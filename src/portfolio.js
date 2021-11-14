@@ -203,7 +203,7 @@ const achievementSection = {
 	achievementsCards: [
 {
 			title: "Java & SpringBoot로 시작하는 웹 프로그래밍",
-			subtitle: "KDS X FastCampus 2개월 온라인 교육과정 부트캠프",
+			subtitle: "KDC 와 FastCampus 의 실무 교육과정",
 			image: require("./assets/images/fastcampus.png"),
 			footerLink: [
 				{
