@@ -6,6 +6,8 @@ import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import Button from "../../components/button/Button";
+
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -51,6 +53,11 @@ export default function Contact() {
               <br />
               <br />
               <SocialMedia />
+              <div className="button-greeting-div">
+                              <Button text="이력서" href="https://docs.google.com/document/d/1OeJP7RhD9u1bzUGLWSHFi1HD5pL1n8QSvSIB6z9pCTI/edit?usp=sharing" />
+                              <Button text="포트폴리오" href="https://docs.google.com/document/d/10prG5f1LrxifDBfC3WVUPRkd9Wxp7f_o1rI2wI3GJLg/edit?usp=sharing" />
+                              <Button text="자기소개서" href="https://docs.google.com/document/d/1aTVOMmwIqi5GaH6Nfky9eoHT5GVkqkj9o39XDIxIPfc/edit?usp=sharing" />
+                            </div>
             </div>
           </div>
           <div className="contact-image-div">

@@ -35,10 +35,10 @@ const Main = () => {
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <Header />
         <Contact />
-        <Achievement /> {/* 자격증, 수료증*/} 
+        <Blogs /> {/* 개인프로젝트 경험*/}
+        <Achievement /> {/* 자격증, 수료증*/}
         <WorkExperience />{/*  */}
         <ProfessionalExp content={professionalProjectInfo} /> {/* 기업프로젝트 경험 */}
-        <Blogs /> {/* 개인프로젝트 경험*/}
         <ProfessionalExp content={educationInfo} /> {/* 교육*/}
         <Projects />
         <Greeting />

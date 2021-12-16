@@ -35,34 +35,19 @@ const greeting = {
 };
 
 const blogSection = {
-	title: "Personal Project Experience",
+	title: "Project Experience",
 	subtitle:
-		"개인적으로도 주기적인 프로젝트 및 개발 경험을 쌓아가고 있습니다.",
+		"꾸준히 프로젝트 및 개발 경험을 쌓아가고 있습니다.",
 	blogs: [
 		{
-			url: "https://github.com/JooHyukKim/EZbasket02",
-			title: "LazyCart 2.0",
-			description: "Chrome Web Store 배포 버전",
+			url: "https://github.com/f-lab-edu/in-bob-we-trust",
+			title: "In Bob We Trust (우리는 밥을 믿습니다.)",
+			description: "우아한 중계서비스",
 			descBullets: [
-				"LazyCart 1.0 버전의 오버헤드 아키텍쳐를 보완하여 크롬웹브라우저에 최적화한 버전."
-			]
-		}, {
-			url: "https://github.com/JooHyukKim/EasyBucket_v.1-HardForked",
-			title: "LazyCart 1.0",
-			description:
-				"E-commerce 쇼핑몰의 통합 장바구니 서비스.",
-			descBullets: [
-				"LazyCart는 쇼핑몰 페이지 도메인과 무관하게 상품을 담을 수 있어 유저가 보다 편리하게 온라인 쇼핑할 수 있습니다.",
-				"기술 스택 : Java 8, Apache Tomcat, MySQL, Jsoup, JSTL, Jquery, Bootstrap, Util.js, Jsoup"
-			]
-		}, {
-			url: "https://github.com/hello-blockchain/hanip-coin/tree/main/vince/hanip-coin-python",
-			title: "블록체인 토이 프로젝트",
-			description:
-				"블록체인 기술의 암호화,보안,통신 원리,탈중앙화 원리를 체험",
-			descBullets: [
-				"Udemy의 <Blockchain A-Z™”> 온라인 코스를 이수 후 진행",
-				"깃허브에서 실행 방법 참고."
+				"배달의민족 중계서비스 개발 프로젝트",
+				"서버 배포 & 프로세스 자동화",
+				"성능 테스트 & 튜닝",
+				"모니터링 & 트러블 슈팅"
 			]
 		}
 	],
@@ -190,7 +175,7 @@ const educationInfo = {
 const contactInfo = {
 	title: emoji("Kim, Joo Hyuk"),
 	subtitle:
-		"저에 대해서 더 궁금하시다면 언제든지 알려주세요!",
+		"소프트웨어 장인을 목표하는 개발자 김주혁입니다.",
 	phone_number: "+82-010-3158-3977",
 	residency: "Seoul, Korea",
 	email_address: "beanskobe@gmail.com"
@@ -203,7 +188,7 @@ const achievementSection = {
 	achievementsCards: [
 {
 			title: "Java & SpringBoot로 시작하는 웹 프로그래밍",
-			subtitle: "KDC 와 FastCampus 의 실무 교육과정",
+			subtitle: "KDC와 FastCampus 의 백엔드개발자 실무교육과정",
 			image: require("./assets/images/fastcampus.png"),
 			footerLink: [
 				{
@@ -249,7 +234,7 @@ const achievementSection = {
 		},
 		{
 			title: "IBM & Coursera Training : Data Visualization with Python",
-			subtitle: "습득 기술 : Python Programming / Data Virtualization / Data Visualization / Matplotlib",
+			subtitle: "파이썬 문법 / 데이터 전처리 / 데이터 시각화",
 
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
@@ -262,7 +247,7 @@ const achievementSection = {
 		},
 		{
 			title: "IBM & Coursera Training : What is Data Science?",
-			subtitle: "습득 지식 : 데이터 사이언스에 대한 정보",
+			subtitle: "데이터 사이언스 기초",
 			image: require("./assets/images/coursera-ibm.png"),
 			footerLink: [
 				{
@@ -283,30 +268,40 @@ const workExperiences = {
 	title: "Career",
 	subTitle: "경력사항",
 	experience: [
-		{
-			company: "Work @플랜잇 헬스케어",
+	        {
+    			company: "Train @F-Lab",
+    			companylogo: require("./assets/images/flab-logo.png"),
+    			role: "Java Backend ",
+    			date: "11/2020 - Present",
+    			desc: "Java Backend 멘토링 프로그램",
+    			descBullets: [
+    				"\"실력과 타이틀, 경험을 모두 갖춘 업계 최고 수준의 개발자분들의 멘토링\"",
+    				"백엔드 개발 이론학습",
+    				"서버 배포 & 프로세스 자동화",
+    				"성능 테스트 & 성능 튜닝",
+    				"모니터링 & 트러블 슈팅",
+    				"가상화 등 기술 적용"
+    				]
+    		},{
+			company: "Work @플랜잇헬스케어",
 			companylogo: require("./assets/images/planit-healthcare-Logo.png"),
 			role: "백엔드 엔지니어",
 			date: "10/2020 - 11/2021",
 			desc: "\"Making Healthcare Data Work\"",
 			descBullets: [
-				"담당업무. 1 : Clinical Research 연구검색엔진 시스템 개발 및 고도화 작업",
-				"담당업무. 2 : BI/CI 지표 및 통합경영대시보드 소프트웨어 운영 개발",
-				"담당업무. 3 : 국책과제 관련 소프트웨어 개발",
-				"개발환경 (Language) : Java, Javascript, Typescript",
-				"개발환경 (Framework)  : SpringBoot, Angular, React, SpringJPA, QueryDSL, Mybatis, Git, Jenkins, Maven, Gradle",
-				"개발환경 (SQL) SQL : MSSQL, PostgreSQL, MySQL",
-			]
+				"연구검색엔진 솔루션 개발 및 고도화 작업",
+				"BI/CI 지표 및 통합경영대시보드 소프트웨어 운영 개발",
+				"국책과제 관련 소프트웨어 개발"]
 		}, {
-			company: "Train @엔코어 아카데미",
+			company: "Train @엔코어아카데미",
 			role: "빅데이터 플랫폼 엔지니어",
 			companylogo: require("./assets/images/playdata-encore.png"),
 			date: "04/2020 - 09/2020",
 			desc: "6개월 교육과정 수료. (웹개발 + 데이터 사이언스)",
 			descBullets: [
-				"백엔드 : Java, SpringBoot, SpringMVC, OOP, 디자인패턴 ",
-				"프론트엔드 : HTML, CSS, Javascript, Vue.js, JSP, Thymeleaf",
-				"데이터 사이언스 : Python, Tensorflow, PyTorch"
+				"백엔드 (자바, 스프링)",
+				"프론트엔드 기초",
+				"데이터 사이언스 기초"
 			]
 		}, {
 			company: "Train @인프런",
@@ -341,13 +336,13 @@ const extraWorkExperience = {
 				"가구 제작"
 			]
 		}, {
-			title: "한샘부엌가구",
+			title: "부엌가구",
 			role: "인테리어 시공팀장",
 			image: require("./assets/images/hanssem.png"),
 			date: "01/2016 - 05/2018",
 			desc: "제주도, 한국",
 			descBullets: [
-				"일반가정 및 아파트 부엌 & 가구 시공",
+				"부엌 & 가구 시공",
 				"A/S 관리",
 				"프로젝트 관리"
 			]
