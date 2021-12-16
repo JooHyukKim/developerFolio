@@ -176,7 +176,7 @@ const contactInfo = {
 	title: emoji("Kim, Joo Hyuk"),
 	subtitle:
 		"소프트웨어 장인을 목표하는 개발자 김주혁입니다.",
-	phone_number: "+82-010-3158-3977",
+	phone_number: "",
 	residency: "Seoul, Korea",
 	email_address: "beanskobe@gmail.com"
 };
